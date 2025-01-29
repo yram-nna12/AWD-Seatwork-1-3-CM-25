@@ -4,25 +4,25 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
+  <a href="https://github.com/yram-nna12/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+    <img src="./assets/img/mainlogoM.png" alt="Mash" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Cinema System</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+  An online tool called CineMaison Cinema Booking System was created to make movie reservations easier. Users may easily explore the movies that are offered, choose showtimes, pick seats, and finish the purchase process. The system has several venues (such as Makati and Manila) and an easy-to-use interface that makes it simple for users to check available seats and order tickets. Users can also create an account in order to manage their reservations. In addition to having choices for controlling payment methods, seat selections, and personal preferences, the system is responsive, guaranteeing seamless operation across several devices.
 </div>
 
 <br />
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=yram-nna12/AWD-Seatwork1)
 
-[![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)
+[![wakatime](https://wakatime.com/badge/user/018f02f8-3e41-49f0-93c6-1b840df169b8/project/61e7ccfd-de01-4daf-a4d0-18b0fc62b940.svg)](https://wakatime.com/badge/user/018f02f8-3e41-49f0-93c6-1b840df169b8/project/61e7ccfd-de01-4daf-a4d0-18b0fc62b940)
 
 ---
 
@@ -59,20 +59,16 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
+A web-based platform called the CineMaison Cinema Booking System makes it simple for consumers to explore films, pick showtimes, select seats, and make payments. Its goal is to lower operating costs for movie theaters while offering a convenient, effective, and user-friendly booking experience. Movie listings, seat preference, safe payment processing, and user identification are important elements. Movie scheduling, seat availability, and user information may all be managed by administrators.
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+For the front end, the system uses HTML, CSS, and JavaScript; for dynamic components, it uses either vanilla JavaScript or React. PHP or Node.js powers the backend, which stores data in MySQL or PostgreSQL. PayPal and Stripe are examples of safe APIs that are coupled with payment processing. Cloud services like AWS or Heroku offer hosting, and JWT or OAuth manage secure authentication.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
-<!-- The following are just sample -->
 - MultiPage Website/Single Page Website
 - Parallax transition
-- Transactional
+- Responsive Design
+- Booking System
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -80,43 +76,17 @@ Guiding Question:
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
 
-## Rules, Practices and Principles
-1. Always use `WD-` in the front of the Title of the Project for the Subject followed by your custom naming.
-2. Do not rename any .html files; always use `index.html` as the filename.
-3. Place Files in their respective folders.
-4. All file naming are in camel case.
-   - Camel case is naming format where there is no white space in separation of each words, the first word is in all lower case while the succeding words first letter are in upper followed by lower cased letters.
-   - ex.: buttonAnimatedStyle.css
-5. Use only `External CSS`.
-6. Renaming of Pages folder names are a must, and relates to what it is doing or data it holding.
-7. File Structure to follow below.
-
-```
-WD-ProjectName
-└─ assets
-|   └─ css
-|   |   └─ style.css
-|   └─ img
-|   |   └─ fileWith.jpeg/.jpg/.webp/.png
-|   └─ js
-|       └─ script.js
-└─ pages
-|  └─ pageName
-|     └─ assets
-|     |  └─ css
-|     |  |  └─ style.css
-|     |  └─ img
-|     |  |  └─ fileWith.jpeg/.jpg/.webp/.png
-|     |  └─ js
-|     |     └─ script.js
-|     └─ index.html
-└─ index.html
-└─ readme.md
-```
 
 ## Resources
 
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Ping Wing | Picture like IMAX & 4DX pictures | [Link](https://www.pngwing.com/en/search?q=imax) |
+| Canva | Editing Photos & Background | [Link](https://www.canva.com/) |
+| IMP Awards | Movie Posters Portrait | [Link](http://www.impawards.com/) |
+| Pinterest | Reference of Website | [Link](https://ph.pinterest.com/) |
+| Vista Cinema | Reference of System | [Link](https://www.vistacinemas.com.ph/) |
+| IMDb | Details of the Movies | [Link](https://www.imdb.com/?ref_=nv_home) |
+| Alpha Coders | Backgrounf Picture Landscape | [Link](https://alphacoders.com/#google_vignette) |
+
