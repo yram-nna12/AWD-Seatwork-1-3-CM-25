@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('../../../../assets/fonts/CooperhewittBold-z2pG.otf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;  /* Ensure the page takes full height */
+    margin: 0;     /* Remove default margins */
+    display: flex;
+    flex-direction: column;  /* Allow footer to be pushed down */
+}
+
+main {
+    flex: 1;  /* Take up the available space, pushing the footer down */
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Cooper Hewitt', sans-serif;
+}
+
+/* --Navigation Part-- */
+.NavigationPart {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: rgb(0, 0, 0);
+    z-index: 100; 
+}
+
+.NavigationPart .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    flex: 1;
+}
+
+.NavigationPart .logo-img {
+    width: 100%;
+    max-width: 75px;
+    height: auto;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.NavigationPart .logo-img.new {
+    opacity: 0;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    transition: opacity 0.3s ease, width 0.3s ease, max-width 0.3s ease;
+}
+
+.NavigationPart .logo:hover .new {
+    opacity: 1;
+}
+
+.NavigationPart .navigation {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex: 2;
+    justify-content: flex-end;
+}
+
+.navigation-content-active {
+    color: rgb(113, 113, 113);
+    font-weight: 100;
+    font-size: 1.4rem;
+    font-family: 'Cooper Hewitt', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.NavigationPart .navigation-content {
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: 1.4rem;
+    font-family: 'Cooper Hewitt', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.NavigationPart .button {
+    border: 1px rgb(255, 255, 255) solid;
+    font-size: 0.9rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.NavigationPart .navigation-content:hover {
+    color: rgb(113, 113, 113);
+}
+
+.NavigationPart .button:hover {
+    color: #ffffff;
+    background-color: rgb(113, 113, 113);
+    border: none;
+}
+
+/*---Movie---*/
+.movie-section {
+    padding: 120px 200px 40px;
+    background-color: rgb(23, 23, 23);
+    text-align: center;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    justify-items: center;
+}
+
+.movie-section h2{
+    margin-top: 2rem;
+    text-align: left;
+    margin-bottom: 3rem;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.movie-section .cs{
+    margin-top: 5rem;
+    text-align: left;
+    margin-bottom: 3rem;
+    color: #fff;
+    font-size: 3rem;
+}
+
+/* Movie Card */
+.movie-card {
+    position: relative;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 100%; 
+    max-width: 250px; 
+    padding-bottom: 20px;
+}
+
+
+.movie-card img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    border-bottom: 2px solid #ffffff;
+}
+
+.movie-card .rating {
+    background-color: #fffefe;
+    color: #000000;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    font-size: 0.9rem;
+}
+
+.movie-card h3 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #000000;
+}
+
+/* Button */
+.movie-card button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.movie-card button:hover {
+    background-color: #027708;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .movie-card img {
+        height: 250px; 
+    }
+    .movie-card h3 {
+        font-size: 1rem;
+    }
+    .NavigationPart .navigation-content {
+        font-size: 0.9rem; 
+    }
+}

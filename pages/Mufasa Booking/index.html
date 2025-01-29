@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMaison</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="NavigationPart">
+        <div class="logo">
+            <img src="../../assets/img/CMLogo.png" alt="CineMaison Logo" class="logo-img">
+            <img src="../../assets/img/CMThumbnail.png" alt="CineMaison Thumbnail" class="logo-img new">
+        </div>
+        <nav class="navigation">
+            <a href="../../index.html" class="navigation-content">HOME</a>
+            <a href="../Movies/index.html" class="navigation-content-active">MOVIES</a>
+        </nav>
+    </nav>    
+
+    <div class="main-container">
+        <section class="booking-section">
+            <h1>Mufasa : The Lion King</h1>
+            <p class="price">Price: <span id="moviePrice">₱350</span></p>
+            <div class="dropdown-container">
+                <div>
+                    <label for="location">Location</label>
+                    <select id="location">
+                        <option value="Metro Manila">Metro Manila</option>
+                        <option value="Makati">Makati</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="time">Time</label>
+                    <select id="time">
+                        <option value="9:00 AM">9:00 AM</option>
+                        <option value="12:00 PM">12:00 PM</option>
+                        <option value="3:00 PM">3:00 PM</option>
+                        <option value="8:00 PM">8:00 PM</option>
+                    </select>
+                </div>
+            </div>
+            <div class="date">
+                <label type="date">Date:</label>
+                <input type="text" id="date" readonly />
+            </div>
+
+            <div class="screen">SCREEN</div>
+
+            <div class="seats-container">
+                <div class="row">
+                    <button class="seat" id="A1">A1</button>
+                    <button class="seat" id="A2">A2</button>
+                    <button class="seat" id="A3">A3</button>
+                    <button class="seat" id="A4">A4</button>
+                    <button class="seat" id="A5">A5</button>
+                </div>
+                <div class="row">
+                    <button class="seat" id="C1">C1</button>
+                    <button class="seat" id="C2">C2</button>
+                    <button class="seat" id="C3">C3</button>
+                    <button class="seat" id="C4">C4</button>
+                    <button class="seat" id="C5">C5</button>
+                </div>
+            </div>
+
+            <div class="selected-seat">
+                <p>Selected Seat: <span id="selectedSeat"> None</span></p>
+            </div>
+
+            <div class="email-container">
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="Enter your email" required />
+            </div>
+
+            <div class="payment-container">
+                <label for="payment">Payment Method</label>
+                <select id="payment">
+                    <option value="Over The Counter">Over The Counter</option>
+                    <option value="E-Wallet">E-Wallet</option>
+                    <option value="Bank">Bank</option>
+                </select>
+            </div>
+
+            <div class="submit-go-back-container">
+                <button class="submit-btn">Submit Booking</button>
+                <button class="go-back-btn" onclick="window.location.href='../Movies/index.html'">Go Back</button>
+            </div>
+        </section>
+    </div>
+
+    <div id="instructionModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Your booking has been confirmed successfully!</h2>
+            <p>Location: <span id="modal-location"></span></p>
+            <p>Date: <span id="modal-date"></span></p>
+            <p>Time: <span id="modal-time"></span></p>
+            <p>Seats: <span id="modal-seats"></span></p>
+            <p>Price: <span>₱350</span></p>
+            <p>Payment: <span id="modal-payment"></span></p>
+            <h3>Booking Instructions:</h3>
+            <p>ACCOUNT#: 01010122556</p>
+            <p>NAME: CineMation Corp</p> 
+            <p>NOTES: email you entered</p>
+            <P>---When successfully paid we will email your ticket. Thank You for trusting our page!---</P>
+            <h3>Reminder</h3>
+            <p>when you choose over the counter, make sure you will pay within the day to secure your reservations</p>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="logo">
+            <img src="../../assets/img/CMLogo.png" alt="Logo">
+        </div>
+        <nav class="navigation">
+            <a href="#">About</a>
+            <a href="#">Membership</a>
+            <a href="#">Contacts</a>
+        </nav>
+        <p>&copy; 2025 CineMaison. All rights reserved.</p>
+    </footer>
+
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>

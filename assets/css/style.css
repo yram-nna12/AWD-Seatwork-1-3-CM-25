@@ -77,6 +77,15 @@ body {
     justify-content: flex-end;
 }
 
+.navigation-content-active {
+    color: rgb(113, 113, 113);
+    font-weight: 100;
+    font-size: 1.4rem;
+    font-family: 'Cooper Hewitt', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
 .NavigationPart .navigation-content {
     color: rgb(255, 255, 255);
     font-weight: 100;
@@ -273,12 +282,13 @@ body {
 }
 
 .text-content h2 {
-    margin-top: 1rem;
+    margin-top: -5rem;
     font-size: 1.5rem;
     color: #ffffff;
 }
 
 .text-content p {
+    font-family: 'Poppins', sans-serif;
     margin-top: 1rem;
     font-size: 1.2rem;
     color: #ffffff;
